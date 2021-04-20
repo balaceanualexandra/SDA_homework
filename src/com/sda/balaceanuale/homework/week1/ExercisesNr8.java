@@ -53,13 +53,13 @@ public class ExercisesNr8
         System.out.println("Valoare numar3 =" + c);
 
         System.out.println("-----------------");
-        System.out.println("Valori initiale pereche 1-3:");
-        System.out.println("Valoare numar1 =" + a);
-        System.out.println("Valoare numar3 =" + c);
+        System.out.println("Valori initiale pereche 2-4:");
+        System.out.println("Valoare numar1 =" + b);
+        System.out.println("Valoare numar3 =" + d);
         double f = b;
         b = d;
         d = (int) f;
-        System.out.println("Valori dupa interschimbare pereche 1-3:");
+        System.out.println("Valori dupa interschimbare pereche 2-4:");
         System.out.println("Valoare numar1 =" + b);
         System.out.println("Valoare numar3 =" + d);
     }
