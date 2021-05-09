@@ -1,0 +1,10 @@
+- Create a House class with fields: squareMeters, bedrooms, bathrooms, floors, price. Don't apply encapsulation yet.
+- Add operations to add bedrooms, squaremeters, bathrooms, floors.
+- Add a parameterized Constructor that validates the inputs ( all fields > 0)
+- Apply encapsulation. Generate getters / setters
+- Decide if the add operations are still required. Maybe you can delete them and use setters instead
+- Add a method that returns the price/square meter
+- Generate the toString method
+- Create 5 different houses and print their details.  Maybe use a loop / foreach.
+- Optional:
+  - Create a RealEstateAgent class with only a method: public House findCheapestHouse(List<House> houses) that finds the cheapeast house in the list and returns it.

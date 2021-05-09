@@ -16,7 +16,7 @@ public class Exercise3
         {
            reverseArray[reverseArray.length -1 -i]= intArrayNumber[i];
         }
-        
+
         System.out.println("Inversul numerelor este: " );
         for (int element : reverseArray)
         {

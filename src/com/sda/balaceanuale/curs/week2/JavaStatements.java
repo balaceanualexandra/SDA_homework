@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class JavaStatements {
     public static void main(String[] args) {
         //INSTRUCTIUNEA SWITCH -> IN expresia din switch putem avea variabila de tip byte, short,char, int si String
-        //In literalii(vvalorile ce apar direct in cod)/variabilele costante(final la declararea variabilei) din case-uri trebuie
+        //In literalii(valorile ce apar direct in cod)/variabilele costante(final la declararea variabilei) din case-uri trebuie
         //sa aiba acelasi tip de data cu variabila evaluata in expresia din switch
         //Atentie la breack -> oprest instructiunea switch;
-        //Sa se dezvolte un program ce, cere o nota de la tastatura si afiseaza un mesaj corespunzator pentru nota respectiva -> Se va utiliza instructiunea SWITCH
+        //Sa se dezvolte un program ce, cere o nota de la tastatura si afiseaza un mesaj corespunzator pentru nota respectiva
+        // -> Se va utiliza instructiunea SWITCH
         //SWITCH
         Scanner scannerNumere = new Scanner(System.in);
         System.out.print("Introdu ultima nota luata la un examen: ");
@@ -21,6 +22,7 @@ public class JavaStatements {
         final byte aiTrecut = 5;
         final byte nota4 = 4;
         final byte nota2 = 2;
+
         switch (notaIntrodusa){
             case 10: // folosim literal ce este bu default constant
                 System.out.println("Esti ZEU!");
@@ -56,6 +58,8 @@ public class JavaStatements {
 //        //pentru asta mereu va trebui sa modificam valoarea variabile sau variabilelor evaluate in conditie.
 //        //conditia din instructiunile repetitive se numeste conditie de oprire!
 //        //Sa se afiseze toate numerele pare pana la un numar introdus de la tastatura.
+
+
         System.out.print("Introdu un numar pana la care doresti sa se afiseze numerele pare: ");
         int nrOprireIntrodus = scannerNumere.nextInt(); //citim de la tastatura numarul pana la care vom afisa numerele pare si il vom salva intr-o variabila pentru utilizarea ulterioara.
         int nr = 0;
