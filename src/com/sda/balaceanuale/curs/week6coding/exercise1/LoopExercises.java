@@ -55,38 +55,46 @@ public class LoopExercises
     //      72, 75, 78, 81, 84, 87, 90, 93, 96, 99
     //  Divided by 5 - 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95
     //  Divided by 3 & 5 - 15, 30, 45, 60, 75, 90
-    public static void numberDivisible (int limit){
+    public static void numberDivisible(int limit)
+    {
         String dividedBy3 = " ";
         String dividedBy5 = " ";
         String dividedBy3And5 = " ";
-        for (int i =1; i <=limit; i++){
-            if(i % 3 ==0){
-                dividedBy3 = dividedBy3+i +",";
-            }if(i % 5 ==0){
-                dividedBy5 = dividedBy5+i +",";
-            }if(i % 3 ==0 && i % 5 ==0){
-                dividedBy3And5 = dividedBy3And5+i +",";
+        for (int i = 1; i <= limit; i++)
+        {
+            if (i % 3 == 0)
+            {
+                dividedBy3 = dividedBy3 + i + ",";
+            }
+            if (i % 5 == 0)
+            {
+                dividedBy5 = dividedBy5 + i + ",";
+            }
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                dividedBy3And5 = dividedBy3And5 + i + ",";
             }
         }
-        System.out.println("Divided by 3 = "+ dividedBy3);
-        System.out.println("Divided by 5 = "+ dividedBy5);
-        System.out.println("Divided by 3 & 5 = "+ dividedBy3And5);
+        System.out.println("Divided by 3 = " + dividedBy3);
+        System.out.println("Divided by 5 = " + dividedBy5);
+        System.out.println("Divided by 3 & 5 = " + dividedBy3And5);
     }
-
-
-
+    
     //5. Write a Java program that prints all the powers of a number under 100: 3
     //  Output: 3, 9, 27, 81
-    public static void powerNumbers(int number, int limit) {
+    public static void powerNumbers(int number, int limit)
+    {
         String result = " ";
         int power = number;
         int i = 2;
-        while (power <= limit) {
-           result = result + power + ",";
-           power = (int) Math.pow(number,i);
-           i++;
+        while (power <= limit)
+        {
+            result = result + power + ",";
+            power = (int) Math.pow(number, i);
+            i++;
 
-        }System.out.println(result );
+        }
+        System.out.println(result);
     }
 
 
