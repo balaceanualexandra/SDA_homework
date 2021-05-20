@@ -171,28 +171,32 @@ public class LoopExercises
 
             if (isPrimeFlag)
                 System.out.print(i + " ");
-        }System.out.println();
+        }
+        System.out.println();
     }
 
     //9. Write a program that prints the first n numbers, with an n increment: n=4
     //  Output: 4, 8, 12, 16
-    public static void firstNumbers(int n){
+    public static void firstNumbers(int n)
+    {
         String result = " ";
-        for(int i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i++)
         {
             result = result + i * n + ",";
 
         }
-        System.out.println("First n numbers" +result);
+        System.out.println("First n numbers" + result);
 
     }
 
     //10. Write a java program to calculate the factorial value of given number: n=5
     //  Output: 120 (1*2*3*4*5)
-    public static void factorialValue(int n) {
+    public static void factorialValue(int n)
+    {
         int result = 1;
-        for(int i = 1; i <= n; i++){
-            result= result*i;
+        for (int i = 1; i <= n; i++)
+        {
+            result = result * i;
         }
         System.out.println("Factorial value of given number: " + result);
 
