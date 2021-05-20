@@ -10,6 +10,11 @@ public class LoopExercises
         dispLayN(5);
         numberDivisible(100);
         powerNumbers(3, 100);
+        fibonacciSeries(10);
+        pyramidNumbers(5);
+        printPrimesTillN(10);
+        firstNumbers(4);
+        factorialValue(5);
     }
 
     // 1. Write a Java program that takes a number and prints its multiplication table up to 10: 8
@@ -79,7 +84,7 @@ public class LoopExercises
         System.out.println("Divided by 5 = " + dividedBy5);
         System.out.println("Divided by 3 & 5 = " + dividedBy3And5);
     }
-    
+
     //5. Write a Java program that prints all the powers of a number under 100: 3
     //  Output: 3, 9, 27, 81
     public static void powerNumbers(int number, int limit)
@@ -97,10 +102,25 @@ public class LoopExercises
         System.out.println(result);
     }
 
-
     // 6. Write a Java program to print Fibonacci series of n terms: 10
     //  Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+    public static void fibonacciSeries(int n)
+    {
+        int firstTerm = 0;
+        int secondTerm = 1;
+        System.out.println("Fibonacci Series till " + n + " terms:");
 
+        for (int i = 1; i <= n; ++i)
+        {
+            System.out.print(firstTerm + ", ");
+
+            // compute the next term
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+        System.out.println();
+    }
 
     //7. Write a Java program to print the following:
     //       1
@@ -108,17 +128,74 @@ public class LoopExercises
     //     33333
     //    4444444
     //   555555555
-
+    public static void pyramidNumbers(int n)
+    {
+        System.out.println("------------");
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = n - i; j >= 1; j--)
+            {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++)
+            {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
 
     //8. Write a program that prints the first n prime numbers: n = 4
     //  Output: 2, 3, 5, 7
+    public static void printPrimesTillN(int n)
+    {
+        int i, j;
+        boolean isPrimeFlag;
+        System.out.println("Prime numbers between 1 and "
+                + n + " are:"); // Traverse each number from 1 to N, with the help of for loop
+        for (i = 1; i <= n; i++)
+        {
+            if (i == 1 || i == 0)
+                continue;
 
+            isPrimeFlag = true;
+
+            for (j = 2; j <= i / 2; ++j)
+            {
+                if (i % j == 0)
+                {
+                    isPrimeFlag = false;
+                    break;
+                }
+            }
+
+            if (isPrimeFlag)
+                System.out.print(i + " ");
+        }System.out.println();
+    }
 
     //9. Write a program that prints the first n numbers, with an n increment: n=4
     //  Output: 4, 8, 12, 16
+    public static void firstNumbers(int n){
+        String result = " ";
+        for(int i = 1; i <= n; i++)
+        {
+            result = result + i * n + ",";
 
+        }
+        System.out.println("First n numbers" +result);
+
+    }
 
     //10. Write a java program to calculate the factorial value of given number: n=5
     //  Output: 120 (1*2*3*4*5)
+    public static void factorialValue(int n) {
+        int result = 1;
+        for(int i = 1; i <= n; i++){
+            result= result*i;
+        }
+        System.out.println("Factorial value of given number: " + result);
+
+    }
 
 }
