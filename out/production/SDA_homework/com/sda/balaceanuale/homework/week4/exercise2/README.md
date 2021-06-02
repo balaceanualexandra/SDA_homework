@@ -1,10 +1,7 @@
-- Create a Animal class with fields: name, age, weight, race. Don't apply encapsulation yet.
-- Add operations to add bedrooms, squaremeters, bathrooms, floors.
-- Add a parameterized Constructor that validates the inputs ( all fields > 0)
-- Apply encapsulation. Generate getters / setters
-- Decide if the add operations are still required. Maybe you can delete them and use setters instead
-- Add a method that returns the price/square meter
-- Generate the toString method
-- Create 5 different houses and print their details.  Maybe use a loop / foreach.
-- Optional:
-  - Create a RealEstateAgent class with only a method: public House findCheapestHouse(List<House> houses) that finds the cheapeast house in the list and returns it.
+Create class Dog.
+- Add private fields to the class, like name, age, gender, race, weight.
+- Create constructor that accepts all of the class fields.
+- Create additional constructor, that will accept only gender and race. It should call main constructor with default values.
+- Create getters and setters for age and weight.
+- Create object of class Dog. Verify if everything works as expected.
+- Add verification for all arguments passed to the setters. E.g. setWeight method should not accept values below or equal to 0.

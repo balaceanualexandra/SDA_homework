@@ -12,7 +12,6 @@ public class ExercisesSet1
         isPalindrome(454);
     }
 
-
     // Question 1
     //Write a program with a method named getTotal that accepts two integers as an argument and return its sum.
     // Call this method from main( ) and print the results.
@@ -21,9 +20,7 @@ public class ExercisesSet1
         int sum = a + b;
         System.out.println("Result: " + sum);
         return sum;
-
     }
-
 
     //Question 2
     //Write a method named isEven that accepts an int argument.
@@ -41,7 +38,6 @@ public class ExercisesSet1
             return false;
         }
     }
-
 
     //Question 3
     //Write a value-returning method, isVowel that returns the value true if a given character is a vowel,
@@ -63,7 +59,6 @@ public class ExercisesSet1
                 return false;
         }
     }
-
 
     //Question 4
     //A prime number is a number that is evenly divisible only by itself and 1.
@@ -98,7 +93,6 @@ public class ExercisesSet1
         }
     }
 
-
     //Question 5
     //A nonnegative integer is called a palindrome if it reads forward and backward in the same way.
     // For example, the numbers 5, 121, 3443, and 123454321 are palindromes.
@@ -126,7 +120,6 @@ public class ExercisesSet1
             return false;
         }
     }
-
 }
 
 

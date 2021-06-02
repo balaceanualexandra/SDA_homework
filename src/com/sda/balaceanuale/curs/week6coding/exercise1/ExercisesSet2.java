@@ -5,7 +5,10 @@ public class ExercisesSet2
 
     public static void main(String[] args)
     {
-
+        smallestNumber(25, 37, 29);
+        average(25, 45, 65);
+        middleCharacter("350");
+        vowelsNumbers("w3resource");
     }
 
     // 1. Write a Java method to find the smallest number among three numbers. Go to the editor
@@ -16,7 +19,20 @@ public class ExercisesSet2
     //Expected Output:
     //
     //The smallest value is 25.0
-
+    public static int smallestNumber(int a, int b, int c)
+    {
+        int min = a;
+        if (b < min)
+        {
+            min = b;
+        }
+        if (c < min)
+        {
+            min = c;
+        }
+        System.out.println("Minim is: " + min);
+        return min;
+    }
 
     //2. Write a Java method to compute the average of three numbers. Go to the editor
     //Test Data:
@@ -26,16 +42,49 @@ public class ExercisesSet2
     //Expected Output:
     //
     //The average value is 45.0
+    public static double average(double a, double b, double c)
+    {
+        double average = (a + b + c) / 3;
+        System.out.println("Average is: " + average);
+        return average;
+    }
 
 
     //3. Write a Java method to display the middle character of a string. Go to the editor
     //Note: a) If the length of the string is odd there will be two middle characters.
     //b) If the length of the string is even there will be one middle character.
     //Test Data:
-    //Input a string: 350
+    //Input a string: 3500
     //Expected Output:
     //
     //The middle character in the string: 5
+
+    public static String middleCharacter(String value)
+    {
+        {
+            int position;
+            int length;
+
+            // 3'50'0 -> 2, 2
+            if (value.length() % 2 == 0)
+            {
+                position = value.length() / 2 - 1;
+                length = 2;
+            }
+            // 3'5'0, 2, 1
+            else
+            {
+                position = value.length() / 2;
+                length = 1;
+            }
+
+            String result = value.substring(position, position + length);
+            System.out.println("Middle character: " + result);
+            return result;
+        }
+
+
+    }
 
 
     //4. Write a Java method to count all vowels in a string. Go to the editor
@@ -44,7 +93,25 @@ public class ExercisesSet2
     //Expected Output:
     //
     //Number of  Vowels in the string: 4
-
+    public static int vowelsNumbers(String value)
+    {
+        int result = 0;
+        for (char c : value.toCharArray())
+        {
+            switch (c)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    result++;
+                    break;
+            }
+        }
+        System.out.println("Number of  Vowels in the string:" + result);
+        return result;
+    }
 
     //5. Write a Java method to count all words in a string. Go to the editor
     //Test Data:
